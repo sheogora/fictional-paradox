@@ -1,0 +1,95 @@
+.container {
+  margin-bottom: 90px;
+  padding: 40px 0 36px;
+  position: relative;
+  border-bottom: 1px solid #ebebeb;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+#logo {
+  font-size: 2em;
+ 	font-weight: 600;
+  color: #eee;
+  letter-spacing: 0.075em;
+}
+
+.show {
+	display: block !important;
+}
+
+.main-menu {
+	margin-top: 50px;
+}
+
+.main-menu:after {
+	display: block;
+  clear: both;
+  content: '';
+}
+
+.main-menu ul {
+  display: inline-block;
+}
+
+.main-menu ul li {
+	margin: 0;
+	float: left;
+	list-style: none;
+}
+
+.main-menu li:first-child {
+  margin-left: 0;
+}
+
+.main-menu-nav {
+
+}
+
+.main-menu-nav li:not(:last-child) :after {
+  margin: 0 30px;
+  display: inline-block;
+  content: '/';
+  color: #eee;
+}
+
+.main-menu-nav a {
+  @extend .text-small;
+}
+
+.self-pic {
+  border-radius: 50%;
+  background-color: #333;
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+  height: 200px;
+  width: 200px;
+  margin-top: 2em;
+  background: url("../../img/profile-pic.jpg") center center no-repeat;
+}
+
+
+
+/* Common mixins */
+
+.text-small {
+  font-size: 22px;
+  line-height: 1.15;
+}
+
+.text-medium {
+  font-size: 22px;
+
+}
+
+.text-large {
+  font-size: 22px;
+}

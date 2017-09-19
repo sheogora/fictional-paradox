@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" ng-app="myApp" lang="en">
+  <head>
+    <title>Angela Kravcevich - Portfolio</title>
+    <meta charset="UTF-8">
+    <!-- Facebook meta tags-->
+    <meta property="og:title" content="Angela Kravcevich - Portfolio">
+    <meta property="og:image" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Angela Kravcevich - Portfolio">
+    <!-- Responsive meta tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="IE=Edge">
+    <meta name="robots" content="index, follow">
+    <!-- Description and keywords for search engines-->
+    <meta name="description" content="This is a porfolio and CV for Angela Kravcevich">
+    <meta name="keywords" content="Portfolio Angela Kravcevich">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Style sheets-->
+	  <link rel="stylesheet" href="styles/base.css" type="text/css">
+	  <link rel="stylesheet" href="styles/all.css" type="text/css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="main-menu show">
+        <div class="container">
+          <div id="logo">Angela Kravcevich</div>
+            <ul class="main-menu-nav">
+              <li><a href="/" class="home-nav">Home</a></li>
+              <li><a href="#!/view1" class="work-nav">My Work</a></li>
+              <li><a href="#!/view2" class="about-nav">About Me</a></li>
+              <li><a href="#" class="art-nav">Art</a></li>
+              <li><a href="#" class="body-nav">Body Painting</a></li>
+              <li><a href="#" class="contact-nav">Contact</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div ng-view></div>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="view1/view1.js"></script>
+    <script src="components/version/version.js"></script>
+    <script src="components/version/version-directive.js"></script>
+    <script src="components/version/interpolate-filter.js"></script>
+
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="foot">&copy; Angela Kravcevich 2017</p>
+      </div>
+    </footer>
+  </body>
+</html>

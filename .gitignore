@@ -1,0 +1,6 @@
+logs/*
+!.gitkeep
+node_modules/
+app/bower_components/
+.bowerrc
+app/styles/
