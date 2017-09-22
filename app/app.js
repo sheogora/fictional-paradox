@@ -13,7 +13,7 @@ angular.module('dragonfly', [
   'dragonfly.directives'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-    $locationProvider.hashPrefix('!');
+  $locationProvider.hashPrefix('!');
 	$routeProvider.otherwise({redirectTo: '/home'});
 }]);
 
