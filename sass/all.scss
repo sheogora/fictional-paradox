@@ -1,5 +1,5 @@
 .container {
-  padding: 40px 0 36px;
+  padding: 0 0 20px 0;
   position: relative;
   border-bottom: 1px solid #ebebeb;
   text-align: center;
@@ -8,26 +8,20 @@
 }
 
 .container:after {
-  content: " ";
+  content: '';
   display: block;
   clear: both;
 }
 
 #logo {
-  font-size: 2em;
- 	font-weight: 600;
-  color: #eee;
-  letter-spacing: 0.075em;
+  font-family: RofiTaste;
+  font-size: 6em;
+  color: #616283;
+  letter-spacing: 0;
 }
 
 .show {
 	display: block !important;
-}
-
-.main-menu:after {
-	display: block;
-  clear: both;
-  content: '';
 }
 
 .main-menu ul {
@@ -40,23 +34,20 @@
 	list-style: none;
 }
 
-.main-menu li:first-child {
-  margin-left: 0;
-}
-
-.main-menu-nav {
-
-}
-
-.main-menu-nav li:not(:last-child) :after {
+.main-menu-nav li:not(:last-child):after {
   margin: 0 30px;
   display: inline-block;
-  content: '/';
-  color: #eee;
+  content: '-';
+  color: #B7B7C6;
 }
 
 .main-menu-nav a {
-  @extend .text-small;
+  font-size: 22px;
+  line-height: 1.15;
+}
+
+.main-menu-nav .active {
+  color: #374A67;
 }
 
 .self-pic {
@@ -69,96 +60,4 @@
   width: 200px;
   margin-top: 2em;
   background: url("../img/profile-pic.jpg") center center no-repeat;
-}
-
-/* Common mixins */
-
-.text-small {
-  font-size: 22px;
-  line-height: 1.15;
-}
-
-.text-medium {
-  font-size: 22px;
-
-}
-
-.text-large {
-  font-size: 22px;
-}
-
-.art-gallery > ul {
-  margin-left: 15%;
-  margin-right: 15%;
-  padding: 0;
-}
-
-.art-gallery > ul > li {
-  display: inline-block;
-  width: 50%;
-}
-
-.art-gallery > ul > li a {
-  border: 3px solid #FFF;
-  display: flex;
-  overflow: hidden;
-  position: relative;
-}
-
-.art-gallery > ul > li a > img {
-  height: 100%;
-  width: 100%;
-  -webkit-transition: -webkit-transform 0.15s ease 0s;
-  -moz-transition: -moz-transform 0.15s ease 0s;
-  -o-transition: -o-transform 0.15s ease 0s;
-  transition: transform 0.15s ease 0s;
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
-}
-
-.art-gallery > ul > li a:hover > img {
-  -webkit-transform: scale3d(1.1, 1.1, 1.1);
-  transform: scale3d(1.1, 1.1, 1.1);
-}
-
-.art-gallery > ul > li a .art-gallery-poster {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  position: absolute;
-  -webkit-transition: background-color 0.15s ease 0s;
-  -o-transition: background-color 0.15s ease 0s;
-  transition: background-color 0.15s ease 0s;
-}
-
-.art-gallery > ul > li a .art-gallery-poster > h3 {
-  opacity: 0;
-  margin: 0;
-  position: absolute;
-  left: 10px;
-  bottom: 10px;
-  -webkit-transition: opacity 0.3s ease 0s;
-  -o-transition: opacity 0.3s ease 0s;
-  transition: opacity 0.3s ease 0s;
-}
-
-.art-gallery > ul > li a:hover .art-gallery-poster > h3 {
-  opacity: 1;
-}
-
-.art-gallery > ul > li a:hover .art-gallery-poster {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-@media (min-width: 768px) {
-  .art-gallery > ul > li {
-    width: 33.333333%;
-  }
-}
-
-@media (min-width: 992px) {
-  .art-gallery > ul > li {
-    width: 25%;
-  }
 }

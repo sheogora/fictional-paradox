@@ -19,8 +19,8 @@
     <!-- Style sheets-->
 	  <link rel="stylesheet" href="styles/base.css" type="text/css">
 	  <link rel="stylesheet" href="styles/all.css" type="text/css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/gallery.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300" rel="stylesheet">
     <link rel="stylesheet" href="bower_components/lightgallery/dist/css/lightgallery.css" type="text/css">
   </head>
   <body>
@@ -28,13 +28,13 @@
       <nav class="main-menu show">
         <div class="container">
           <div id="logo">Angela Kravcevich</div>
-            <ul class="main-menu-nav">
-              <li><a href="#!/home" class="home-nav">Home</a></li>
-              <li><a href="#!/work" class="work-nav">My Work</a></li>
-              <li><a href="#!/about" class="about-nav">About Me</a></li>
-              <li><a href="#!/art" class="art-nav">Art</a></li>
-              <li><a href="#!/bodypaint" class="body-nav">Body Painting</a></li>
-              <li><a href="#!/contact" class="contact-nav">Contact</a></li>
+            <ul class="main-menu-nav" bs-active-link>
+              <li><a href="#!/home" class="home-nav" ng-class="{active: isActive('/home')}">Home</a></li>
+              <li><a href="#!/work" class="work-nav" ng-class="{active: isActive('/work')}">My Work</a></li>
+              <li><a href="#!/about" class="about-nav" ng-class="{active: isActive('/about')}">About Me</a></li>
+              <li><a href="#!/art" class="art-nav" ng-class="{active: isActive('/art')}">Art</a></li>
+              <li><a href="#!/bodypaint" class="body-nav" ng-class="{active: isActive('/bodypaint')}">Body Painting</a></li>
+              <li><a href="#!/contact" class="contact-nav" ng-class="{active: isActive('/contact')}">Contact</a></li>
             </ul>
         </div>
       </nav>

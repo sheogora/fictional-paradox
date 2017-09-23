@@ -8,35 +8,30 @@ angular.module('dragonfly.art', ['ngRoute'])
 }])
 .controller('ArtCtrl', ['$scope', '$window', '$sce', function($scope, $window, $sce) {
   $scope.photos = [{
-    fullres: 'https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg',
-    thumbnail: 'https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg',
-    title: 'Test1',
-    subhtml: '<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>',
-    responsive: 'https://sachinchoolur.github.io/lightGallery/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightGallery/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightGallery/static/img/1.jpg 800'
+    fullres: 'img/widow.jpg',
+    thumbnail: 'img/widow-thumb.jpg',
+    title: 'Widowmaker',
+    subhtml: '<h4>Widowmaker</h4><p>Fan art of Widowmaker character from Overwatch video game. Drawn using Photoshop CS6.</p>'
   }, {
-    fullres: 'https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg',
-    thumbnail: 'https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-2.jpg',
-    title: 'Test2',
-    subhtml: '<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>',
-    responsive: 'https://sachinchoolur.github.io/lightGallery/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightGallery/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightGallery/static/img/1.jpg 800'
+    fullres: 'img/katvond2.jpg',
+    thumbnail: 'img/katvond2-thumb.jpg',
+    title: 'Seeing Double',
+    subhtml: '<h4>Seeing Double</h4><p>Inspired by Kat Von D Saint and Sinner perfume trailer. Drawn using Photoshop CS6.</p>'
   }, {
-    fullres: 'https://sachinchoolur.github.io/lightgallery.js/static/img/13-1600.jpg',
-    thumbnail: 'https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-3.jpg',
-    title: 'Test3',
-    subhtml: '<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>',
-    responsive: 'https://sachinchoolur.github.io/lightGallery/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightGallery/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightGallery/static/img/1.jpg 800'
+    fullres: 'img/spot-blu.jpg',
+    thumbnail: 'img/spot-blu-thumb1.jpg',
+    title: 'Spot the Blue',
+    subhtml: '<h4>Spot the Blue</h4><p>One of my most proudest art works. The contrast between the sharp blue eye and the perspective blend gives this painting softness and innocence. Drawn using Photoshop CS6.</p>'
   }, {
-    fullres: 'https://sachinchoolur.github.io/lightgallery.js/static/img/4-1600.jpg',
-    thumbnail: 'https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-4.jpg',
-    title: 'Test4',
-    subhtml: '<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>',
-    responsive: 'https://sachinchoolur.github.io/lightGallery/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightGallery/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightGallery/static/img/1.jpg 800'
+    fullres: 'img/fishy.jpg',
+    thumbnail: 'img/fishy-thumb.jpg',
+    title: 'Whale Shark',
+    subhtml: '<h4>Whale Shark</h4><p>An underwater scene of a diver meeting a whale shark. Drawn using Photoshop CS6.</p>'
   }, {
-    fullres: 'https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg',
-    thumbnail: 'https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg',
-    title: 'Test5',
-    subhtml: '<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>',
-    responsive: 'https://sachinchoolur.github.io/lightGallery/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightGallery/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightGallery/static/img/1.jpg 800'
+    fullres: 'img/froggo.jpg',
+    thumbnail: 'img/froggo-thumb.jpg',
+    title: 'Red-eyed tree frog',
+    subhtml: '<h4>Red-eyed tree frog</h4><p>A painting of a Red-eyed tree frog. One of the first photoshop drawing I ever did. Drawn using Photoshop CS6.</p>'
   }];
 
   for (var i = 0; i < $scope.photos.length; i++) {
