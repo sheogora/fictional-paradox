@@ -290,27 +290,9 @@ hr {
 }
 
 a:hover, a:focus {
-  /*color: rgba(255, 255, 255, 0.7);*/
   color: #28265f;
-  
   font-weight: bold;
 }
-
-/*::-moz-selection {
-  background: rgba(255, 255, 255, 0.9);
-}
-
-::selection {
-  background: rgba(255, 255, 255, 0.9);
-}
-
-::-moz-selection {
-  background: rgba(255, 255, 255, 0.9);
-}
-
-img::-moz-selection {
-  background: rgba(255, 255, 255, 0.9);
-}*/
 
 body {
   -webkit-tap-highlight-color: transparent;

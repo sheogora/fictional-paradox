@@ -1,5 +1,4 @@
 .container {
-  margin-bottom: 90px;
   padding: 40px 0 36px;
   position: relative;
   border-bottom: 1px solid #ebebeb;
@@ -23,10 +22,6 @@
 
 .show {
 	display: block !important;
-}
-
-.main-menu {
-	margin-top: 50px;
 }
 
 .main-menu:after {
@@ -155,7 +150,6 @@
 .art-gallery > ul > li a:hover .art-gallery-poster {
   background-color: rgba(255, 255, 255, 0.5);
 }
-
 
 @media (min-width: 768px) {
   .art-gallery > ul > li {
