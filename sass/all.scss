@@ -50,14 +50,19 @@
   color: #374A67;
 }
 
+.about-side {
+  width: 60%;
+  float: right;
+  text-align: left;
+}
+
 .self-pic {
+  margin: 40px;
+  width: 330px;
+  height: 330px;
+  float: left;
+  background-size: cover;
+  background-position: center;
   border-radius: 50%;
-  background-color: #333;
-  margin: 0 auto;
-  display: block;
-  width: 50%;
-  height: 200px;
-  width: 200px;
-  margin-top: 2em;
-  background: url("../img/profile-pic.jpg") center center no-repeat;
+  background-image: url("../img/profile-pic1.jpg");
 }
