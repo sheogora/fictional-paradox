@@ -72,11 +72,6 @@ dfn {
   font-style: italic;
 }
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
 mark {
   background: #ff0;
   color: #000;
@@ -242,18 +237,19 @@ li {
   text-decoration: none;
 }
 
-h1, h2.h3, h4, h5, h6 {
-  color: #7A7F82;
+h1, h2, h3, h4, h5, h6 {
+  color: #616283;
   font-weight: bold;
+  margin: 0;
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 2.5em;
   line-height: 1.05;
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 2em;
   line-height: 1.15;
 }
 

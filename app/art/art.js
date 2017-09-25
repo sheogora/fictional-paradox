@@ -32,6 +32,11 @@ angular.module('dragonfly.art', ['ngRoute'])
     thumbnail: 'img/froggo-thumb.jpg',
     title: 'Red-eyed tree frog',
     subhtml: '<h4>Red-eyed tree frog</h4><p>A painting of a Red-eyed tree frog. One of the first photoshop drawing I ever did. Drawn using Photoshop CS6.</p>'
+  }, {
+    fullres: 'img/spook.jpg',
+    thumbnail: 'img/spook-thumb1.jpg',
+    title: 'Ghost',
+    subhtml: '<h4>Ghost</h4><p>A quick painting I did to experiment with fading into white. Inspired by my own previous sketching with pencil of women fading into background of the page. Drawn using Photoshop CS6</p>'
   }];
 
   for (var i = 0; i < $scope.photos.length; i++) {

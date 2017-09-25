@@ -4,7 +4,6 @@
 angular.module('dragonfly', [
   'ngRoute',
   'dragonfly.home',
-  'dragonfly.about',
   'dragonfly.work',
   'dragonfly.art',
   'dragonfly.bodypaint',
