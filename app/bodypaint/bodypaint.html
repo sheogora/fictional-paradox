@@ -1,1 +1,14 @@
-<div>Body Painting</div>
+<div class="container">
+	<div class="art-gallery">
+	    <ul>
+		    <li lightgallery ng-repeat="photo in photos" data-src="{{photo.fullres}}" data-sub-html="{{photo.subhtml}}">
+		       <a>
+		      		<img ng-src="{{photo.thumbnail}}" />
+		          	<div class="art-gallery-poster">
+		            	<h4>{{photo.title}}</h4>
+		         	</div>
+		      	</a>
+		    </li>
+	 	 </ul>
+	 </div>
+</div>

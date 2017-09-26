@@ -1,6 +1,4 @@
 .art-gallery > ul {
-  margin-left: 15%;
-  margin-right: 15%;
   padding: 0;
 }
 
@@ -43,7 +41,7 @@
   transition: background-color 0.15s ease 0s;
 }
 
-.art-gallery > ul > li a .art-gallery-poster > h3 {
+.art-gallery > ul > li a .art-gallery-poster > h4 {
   opacity: 0;
   margin: 0;
   position: absolute;
@@ -52,20 +50,19 @@
   -webkit-transition: opacity 0.3s ease 0s;
   -o-transition: opacity 0.3s ease 0s;
   transition: opacity 0.3s ease 0s;
-  color: white;
+  color: #151E3F;
 }
 
-.art-gallery > ul > li a:hover .art-gallery-poster > h3 {
+.art-gallery > ul > li a:hover .art-gallery-poster > h4 {
   opacity: 1;
-  color: white;
 }
 
 .art-gallery > ul > li a:hover .art-gallery-poster {
-  background: rgba(255,255,255,0.5); /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(bottom,rgba(255,255,255,0),rgba(255,255,255,0.5)); /*Safari 5.1-6*/
-  background: -o-linear-gradient(bottom,rgba(255,255,255,0),rgba(255,255,255,0.5)); /*Opera 11.1-12*/
-  background: -moz-linear-gradient(bottom,rgba(255,255,255,0),rgba(255,255,255,0.5)); /*Fx 3.6-15*/
-  background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.5)); /*Standard*/
+  background: rgba(255,255,255,0.7); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(bottom,rgba(255,255,255,0),rgba(255,255,255,0.7)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(bottom,rgba(255,255,255,0),rgba(255,255,255,0.7)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(bottom,rgba(255,255,255,0),rgba(255,255,255,0.7)); /*Fx 3.6-15*/
+  background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.7)); /*Standard*/
 }
 
 @media (min-width: 768px) {

@@ -1,15 +1,19 @@
 .site-header {
   margin-bottom: 40px;
+  padding: 0 40px;
+}
+
+.view-container {
+  padding: 0 40px;
 }
 
 .container {
   position: relative;
   border-bottom: 1px solid #ebebeb;
   text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 40px;
   padding-bottom: 40px;
+  margin: 0 auto 40px auto;
+  max-width: 1200px;
 }
 
 .container:after {
