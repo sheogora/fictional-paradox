@@ -17,11 +17,12 @@
     <meta name="keywords" content="Portfolio Angela Kravcevich">
     <meta name="theme-color" content="#ffffff">
     <!-- Style sheets-->
-	  <link rel="stylesheet" href="styles/base.css" type="text/css">
+	  <!-- <link rel="stylesheet" href="styles/base.css" type="text/css"> -->
 	  <link rel="stylesheet" href="styles/all.css" type="text/css">
-    <link rel="stylesheet" href="styles/gallery.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles/gallery.css" type="text/css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Franklin:300">
     <link rel="stylesheet" href="bower_components/lightgallery/dist/css/lightgallery.css" type="text/css">
+    <link rel='stylesheet' href="bower_components/typicons.font/src/font/typicons.min.css">
   </head>
   <body>
     <header class="site-header">
@@ -31,7 +32,6 @@
             <ul class="main-menu-nav" bs-active-link>
               <li><a href="#!/home" class="home-nav" ng-class="{active: isActive('/home')}">About Me</a></li>
               <li><a href="#!/work" class="work-nav" ng-class="{active: isActive('/work')}">My Work</a></li>
-              <!-- <li><a href="#!/about" class="about-nav" ng-class="{active: isActive('/about')}">About Me</a></li> -->
               <li><a href="#!/art" class="art-nav" ng-class="{active: isActive('/art')}">Art</a></li>
               <li><a href="#!/bodypaint" class="body-nav" ng-class="{active: isActive('/bodypaint')}">Body Painting</a></li>
               <li><a href="#!/contact" class="contact-nav" ng-class="{active: isActive('/contact')}">Contact</a></li>
@@ -54,8 +54,13 @@
     <script src="work/work.js"></script>
 
     <footer class="site-footer">
-      <div class="container">
-        <p class="foot">&copy; Angela Kravcevich 2017</p>
+      <p class="copyright-footer">&copy; Angela Kravcevich 2017</p>
+
+      <div class="contact-footer">
+        <a class="typcn typcn-social-instagram" href="https://www.instagram.com/sheogora/" target="_blank"></a>
+        <a class="typcn typcn-social-linkedin" href="https://www.linkedin.com/in/angelakravcevich/" target="_blank"></a>
+        <a class="typcn typcn-social-github" href="https://github.com/sheogora" target="_blank"></a>
+        <a class="typcn typcn-social-twitter" href="https://twitter.com/Sheogora" target="_blank"></a>
       </div>
     </footer>
   </body>

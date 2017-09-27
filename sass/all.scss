@@ -1,6 +1,28 @@
+@import 'common';
+@import 'gallery';
+@import 'base';
+
 .site-header {
   margin-bottom: 40px;
   padding: 0 40px;
+}
+
+.site-footer {
+  @include app-spacing;
+
+  .copyright-footer {
+    float: left;
+    margin: 25px 0;
+  }
+
+  .contact-footer {
+    float: right;
+
+    a {
+      padding: 5px;
+      font-size: 2.5em;
+    }
+  }
 }
 
 .view-container {
@@ -11,9 +33,7 @@
   position: relative;
   border-bottom: 1px solid #ebebeb;
   text-align: center;
-  padding-bottom: 40px;
-  margin: 0 auto 40px auto;
-  max-width: 1200px;
+  @include app-spacing;
 }
 
 .container:after {
@@ -25,7 +45,7 @@
 #logo {
   font-family: RofiTaste;
   font-size: 6em;
-  color: #616283;
+  color: $light-blue;
   letter-spacing: 0;
 }
 
@@ -33,30 +53,32 @@
 	display: block !important;
 }
 
-.main-menu ul {
-  display: inline-block;
-}
+.main-menu {
+    ul {
+      display: inline-block;
 
-.main-menu ul li {
-	margin: 0;
-	float: left;
-	list-style: none;
-}
+      li {
+        margin: 0;
+        float: left;
+        list-style: none;
+      }
 
-.main-menu-nav li:not(:last-child):after {
-  margin: 0 30px;
-  display: inline-block;
-  content: '-';
-  color: #B7B7C6;
-}
+      li:not(:last-child):after {
+        margin: 0 30px;
+        display: inline-block;
+        content: '-';
+        color: $grey;
+      }
 
-.main-menu-nav a {
-  font-size: 22px;
-  line-height: 1.15;
-}
+      a {
+        font-size: 22px;
+        line-height: 1.15;
+      }
 
-.main-menu-nav .active {
-  color: #374A67;
+      .active {
+        color: $blue;
+      }
+    }
 }
 
 .about-side {
