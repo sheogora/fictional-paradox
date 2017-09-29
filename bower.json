@@ -12,6 +12,6 @@
     "angular-mocks": "~1.2.x",
     "html5-boilerplate": "~4.3.0",
     "lightgallery": "^1.6.1",
-    "typicons.font": "typicons#^2.0.9"
+    "font-awesome": "^4.7.0"
   }
 }

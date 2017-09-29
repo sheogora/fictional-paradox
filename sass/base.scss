@@ -1,3 +1,5 @@
+@import 'common';
+
 @font-face {
     font-family: RofiTaste;
     src: url(font/RofiTaste.woff);
@@ -249,7 +251,7 @@ li {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #616283;
+  color: $light-blue;
   font-weight: bold;
   margin: 0;
 }
@@ -277,7 +279,7 @@ h4 {
 p {
   line-height: 1.5;
   font-size: 1.05em;
-  color: #030027;
+  color: $black;
 }
 
 em {
@@ -297,17 +299,17 @@ hr {
 }
 
 a {
-  color: #B7B7C6;
+  color: $grey;
   text-decoration: none;
 }
 
 a:hover, a:focus {
-  color: #374A67;
+  color: $blue;
 }
 
 body {
   -webkit-tap-highlight-color: transparent;
-  background-color: #ffffff;
+  background-color: $white;
   line-height: 1.5;
   font-family: 'Libre Franklin', sans-serif;
   -webkit-font-smoothing: antialiased;
