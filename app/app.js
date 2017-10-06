@@ -28,6 +28,3 @@ angular.module('dragonfly')
         }
     }
 }]);
-
-var myServices = angular.module('dragonfly.services', []);
-var myDirectives = angular.module('dragonfly.directives', []);

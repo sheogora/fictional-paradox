@@ -21,6 +21,7 @@
     "postinstall": "bower install",
     "prestart": "npm install",
     "start": "concurrently \"http-server -a localhost -p 5000 -c-1\" \"npm run watch:sass\"",
+    "deploy": "concurrently \"http-server ./ -p ${PORT:=5000} -c-1\" \"npm run watch:sass\"",
     "build:sass": "node-sass sass/ -o app/styles",
     "watch:sass": "npm run build:sass && node-sass sass/ -wo app/styles"
   }
