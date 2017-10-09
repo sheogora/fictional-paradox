@@ -63,10 +63,6 @@ template {
   display: none;
 }
 
-a {
-  background-color: transparent;
-}
-
 a:active,
 a:hover {
   outline: 0;
@@ -300,7 +296,7 @@ hr {
 
 a {
   color: $grey;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover, a:focus {

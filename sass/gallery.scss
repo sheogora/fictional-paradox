@@ -9,10 +9,11 @@
       width: 50%;
 
       a {
-        border: 5px solid $white;
         display: flex;
         overflow: hidden;
         position: relative;
+        margin: 5px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 
         img {
           -webkit-transition: -webkit-transform 0.15s ease 0s;
