@@ -57,18 +57,22 @@
 
       .left-contact-info {
         grid-column: 1;
-        grid-row: 2 ;
+        grid-row: 2;
       }
 
       .right-contact-info {
-        grid-column: 2 ;
-        grid-row: 2 ;
+        grid-column: 2;
+        grid-row: 2;
+      }
+
+      .left-contact-info, .right-contact-info {
+        a {
+          padding-bottom: 20px;
+          display: inline-block;
+        }
       }
 
       a {
-        padding-bottom: 20px;
-        display: inline-block;
-
         i.fa {
           transition: unset;
           font-size: 2.4em;
@@ -88,8 +92,9 @@
       }
 
     .app-info {
-      grid-column: 3 ;
+      grid-column: 3;
       grid-row: 1 / 3;
+      margin-left: 30px;
     }
   }
 }
@@ -102,7 +107,7 @@
 }
 
 .show {
-	display: block !important;
+  display: block !important;
 }
 
 .main-menu {
@@ -195,9 +200,25 @@
     height: 400px;
 
 
-    .work-image {
+    .work-image-links {
       width: 30%;
-      border-radius: 30px;
+      float: left;
+
+      img {
+        width: 100%;
+        border-radius: 30px;
+      }
+
+      .work-links {
+        padding-right: 20px;
+        padding-left: 20px;
+        text-align: center;
+
+        li {
+          display: inline-block;
+          padding-right: 10px;
+        }
+      }
     }
 
     .work-description {
@@ -210,4 +231,21 @@
       margin-bottom: 40px;
     }
   }
+}
+
+.nodejs, .heroku {
+  p {
+    float: left;
+    margin-right: 20px;
+    margin-top: 30px;
+  }
+
+  img {    
+    width: 200px;
+    margin-bottom: 10px;
+  }
+}
+
+.heroku img {
+  margin-top: 10px;
 }
