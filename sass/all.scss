@@ -106,6 +106,7 @@
   font-size: 6em;
   color: $light-blue;
   letter-spacing: 0;
+  line-height: 0.75;
 }
 
 .show {
@@ -114,6 +115,7 @@
 
 .main-menu {
     ul {
+      margin: 0;
       display: inline-block;
 
       li {
@@ -123,7 +125,7 @@
       }
 
       li:not(:last-child):after {
-        margin: 0 30px;
+        margin: 0 15px;
         display: inline-block;
         content: '-';
         color: $grey;
@@ -257,4 +259,67 @@
 
 .heroku img {
   margin-top: 10px;
+}
+
+.mobile-nav {
+  width: 150px;
+  height: 45px;
+  margin-top: 50px;
+  display: inline-block;
+
+  i {
+    padding-right: 10px;
+  }
+}
+
+.main-menu ul {
+  max-height: 0px;
+  overflow: hidden;
+  margin: 0;
+}
+
+// redo, only increase max-height on expand. 
+// add the rest of this stuff into mobile css
+// move the desktop implementation under @media tag
+.main-menu .expand {
+  max-height: 400px;
+  display: block;
+  padding: 20px;
+
+  li {
+    float: none;
+    padding: 10px;
+
+    &:not(:last-child):after {
+      content: none;
+    }
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  #logo {
+    line-height: 1.5;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .main-menu ul {
+    max-height: 200px;
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  .container {
+    padding-bottom: 40px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .main-menu ul li:not(:last-child):after {
+    margin: 0 30px;
+  }
 }

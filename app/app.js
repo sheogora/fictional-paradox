@@ -13,21 +13,29 @@ angular.module('dragonfly', [
 ])
 .config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
+  // reset menuList items
+  
 	$routeProvider.otherwise({redirectTo: '/home'});
 }]);
 
 angular.module('dragonfly')
+    .controller('mainCtrl', ['$scope', function($scope) {
+      $scope.onMenuClick = function() {
+        var menuList = angular.element('#menu-items')[0];
+        menuList.classList.toggle('expand');
+      };
+    }])
     .directive('bsActiveLink', ['$location', function ($location) {
-    return {
-        restrict: 'A', //use as attribute 
-        replace: false,
-        link: function (scope, elem) {
-          scope.isActive = function (viewLocation) { 
-              return viewLocation === $location.path();
-          };
-        }
-    }
-}]);
+      return {
+          restrict: 'A', //use as attribute 
+          replace: false,
+          link: function (scope, elem) {
+            scope.isActive = function (viewLocation) { 
+                return viewLocation === $location.path();
+            };
+          }
+      }
+    }]);
 
 var myServices = angular.module('dragonfly.services', []);
 var myDirectives = angular.module('dragonfly.directives', []);

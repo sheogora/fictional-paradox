@@ -71,12 +71,14 @@
   }
 }
 
+/* Tablet */
 @media (min-width: 768px) {
   .art-gallery > ul > li {
     width: 33.333333%;
   }
 }
 
+/* Desktop */
 @media (min-width: 992px) {
   .art-gallery > ul > li {
     width: 25%;
