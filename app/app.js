@@ -13,8 +13,6 @@ angular.module('dragonfly', [
 ])
 .config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
-  // reset menuList items
-  
 	$routeProvider.otherwise({redirectTo: '/home'});
 }]);
 
@@ -24,6 +22,11 @@ angular.module('dragonfly')
         var menuList = angular.element('#menu-items')[0];
         menuList.classList.toggle('expand');
       };
+      // reset menu
+      $scope.$on('$locationChangeStart', function( event ) {
+        var menuList = angular.element('#menu-items')[0];
+        menuList.classList.remove('expand');
+      });
     }])
     .directive('bsActiveLink', ['$location', function ($location) {
       return {

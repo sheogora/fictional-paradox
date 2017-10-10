@@ -13,11 +13,14 @@
 
   .copyright-footer {
     float: left;
-    margin: 25px 0;
+    width: 100%;
+    text-align: center;
   }
 
   .contact-footer {
     float: right;
+    width: 100%;
+    text-align: center;
 
     a {
       padding: 5px;
@@ -28,13 +31,14 @@
   }
 }
 
-.view-container {
+.view-container, .site-footer {
   padding: 0 40px;
 }
 
 .container {
   position: relative;
   border-bottom: 1px solid #ebebeb;
+  padding-bottom: 40px;
   @include app-spacing;
 }
 
@@ -46,10 +50,11 @@
 
 .contact-page {
   text-align: left;
+
   .contact-grid {
     display: grid;
     grid-gap: 30px;
-    grid-template-columns: 24% 24% 50%;
+    grid-template-columns: 50% 50%;
 
       .contact-info {
         grid-column: 1 / 3;
@@ -71,6 +76,7 @@
           padding-bottom: 20px;
           display: inline-block;
           text-decoration: none;
+          width: 100%;
         }
       }
 
@@ -94,9 +100,8 @@
       }
 
     .app-info {
-      grid-column: 3;
-      grid-row: 1 / 3;
-      margin-left: 30px;
+      grid-column: 1/3;
+      grid-row: 3;
     }
   }
 }
@@ -113,47 +118,21 @@
   display: block !important;
 }
 
-.main-menu {
-    ul {
-      margin: 0;
-      display: inline-block;
-
-      li {
-        margin: 0;
-        float: left;
-        list-style: none;
-      }
-
-      li:not(:last-child):after {
-        margin: 0 15px;
-        display: inline-block;
-        content: '-';
-        color: $grey;
-      }
-
-      a {
-        font-size: 22px;
-        line-height: 1.15;
-        text-decoration: none;
-      }
-
-      .active {
-        color: $blue;
-      }
-    }
-}
-
 .about-side {
-  width: 60%;
+  width: 100%;
   float: right;
   text-align: left;
 }
 
+.home-header {
+  padding-top: 20px;
+  text-align: center;
+}
+
 .self-pic {
   float: left;
-  border-radius: 50%;
-  max-width: 350px;
-  width: 35%;
+  border-radius: 3px;
+  width: 100%;
   filter: hue-rotate(340deg);
 }
 
@@ -161,12 +140,14 @@
   width: 35%;
   float: left;
   text-align: left;
+  width: 100%;
 }
 
 .art-column-right {
   float: right;
   width: 60%;
   height: auto;
+  width: 100%;
 }
 
 .contact-cover {
@@ -196,17 +177,19 @@
   }
 }
 
-.work-page {
+.container.work-page {
   h3 {
     margin-bottom: 40px;
+    text-align: center;
   }
 
   .showcase {
-    height: 400px;
+    min-height: 200px;
+    display: flow-root;
 
 
     .work-image-links {
-      width: 30%;
+      width: 100%;
       float: left;
 
       img {
@@ -233,8 +216,12 @@
     }
 
     .work-description {
-      width: 65%;
+      width: 100%;
       float: right;
+
+      h4 {
+        text-align: center;
+      }
     }
     &:not(:last-child) {
       border-bottom: 1px solid #ebebeb;
@@ -261,6 +248,33 @@
   margin-top: 10px;
 }
 
+.main-menu {
+  display: block;
+
+  ul {
+    max-height: 0px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: block;
+
+    li {
+      float: none;
+      padding: 10px;
+    }
+
+    a {
+      font-size: 22px;
+      line-height: 1.15;
+      text-decoration: none;
+    }
+
+    .active {
+      color: $blue;
+    }
+  }
+}
+
 .mobile-nav {
   width: 150px;
   height: 45px;
@@ -272,28 +286,8 @@
   }
 }
 
-.main-menu ul {
-  max-height: 0px;
-  overflow: hidden;
-  margin: 0;
-}
-
-// redo, only increase max-height on expand. 
-// add the rest of this stuff into mobile css
-// move the desktop implementation under @media tag
 .main-menu .expand {
   max-height: 400px;
-  display: block;
-  padding: 20px;
-
-  li {
-    float: none;
-    padding: 10px;
-
-    &:not(:last-child):after {
-      content: none;
-    }
-  }
 }
 
 /* Tablet */
@@ -310,10 +304,94 @@
     max-height: 200px;
     margin: 0;
     margin-top: 30px;
+    display: inline-block;
+
+    li {
+      margin: 0;
+      float: left;
+      list-style: none;
+      padding: 0;
+    }
+
+    li:not(:last-child):after {
+      margin: 0 15px;
+      display: inline-block;
+      content: '-';
+      color: $grey;
+    }
   }
 
-  .container {
-    padding-bottom: 40px;
+  .self-pic {
+    width: 35%;
+  }
+
+  .home-header {
+    padding-top: 0;
+    text-align: left;
+  }
+
+  .about-side, .art-column-right {
+    width: 60%;
+  }
+
+  .art-column-left {
+    width: 35%;
+  }
+
+  .contact-page .contact-grid {
+    grid-template-columns: 24% 24% 50%;
+
+    .contact-info {
+      grid-column: 1 / 3;
+      grid-row: 1;
+    }
+
+    .left-contact-info {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .right-contact-info {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    .app-info {
+      grid-column: 3;
+      grid-row: 1 / 3;
+      margin-left: 30px;
+    }
+  }
+
+  .site-footer {
+    .copyright-footer {
+      margin: 25px 0;
+      width: 50%;
+      text-align: left;
+    }
+
+    .contact-footer {
+      width: 50%;
+      text-align: right;
+    }
+  }
+
+  .container.work-page .showcase {
+    .work-image-links {
+      width: 30%;
+    }
+
+    .work-description {
+      width: 65%;
+
+      h4 {
+        text-align: left;
+      }
+    }
+  }
+
+  .work-page h3 {
+    text-align: left;
   }
 }
 
