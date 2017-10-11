@@ -9,7 +9,7 @@ angular.module('dragonfly.art', ['ngRoute'])
 .controller('ArtCtrl', ['$scope', '$window', '$sce', function($scope, $window, $sce) {
   var artUrl = 'img/art/';
   var artThumbUrl = 'img/art-thumb/';
-  
+
   $scope.photos = [{
     fullres: artUrl +'widow.jpg',
     thumbnail: artThumbUrl + 'widow-thumb.jpg',
@@ -51,7 +51,7 @@ angular.module('dragonfly.art', ['ngRoute'])
     restrict: 'A',
     link: function(scope, element, attrs) {
       if (scope.$last) {
-        	element.parent().lightGallery();
+          element.parent().lightGallery();
       }
     }
   };
