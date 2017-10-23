@@ -85,9 +85,20 @@
   }
 }
 
-.lg-sub-html > p {
-  color: $grey;
-}
-.lg-sub-html > h4 {
-  color: $white;
+.lg-slide .lg-sub-html {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.75);
+
+  p {
+    font-size: 14px;
+    color: $grey;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  h4 {
+    font-size: 16px;
+    color: $white;
+  }
 }

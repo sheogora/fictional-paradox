@@ -18,7 +18,7 @@
     <meta name="theme-color" content="#ffffff">
     <!-- Style sheets-->
 	  <link rel="stylesheet" href="styles/all.css" type="text/css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Franklin:300">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400">
     <link rel="stylesheet" href="bower_components/lightgallery/dist/css/lightgallery.css" type="text/css">
     <link rel='stylesheet' href="bower_components/font-awesome/css/font-awesome.min.css"">
   </head>
@@ -26,7 +26,9 @@
     <header class="site-header">
       <nav class="main-menu show">
         <div class="container" ng-controller="mainCtrl">
-          <div id="logo">Angela Kravcevich</div>
+          <div id="logo">
+            <a class="logo-link" href="#!/home">Angela Kravcevich</a>
+          </div>
             <button class="mobile-nav" ng-click="onMenuClick()">
               <i class="fa fa-bars"></i>
               Menu
@@ -36,7 +38,7 @@
                 <a href="#!/home" class="home-nav" ng-class="{active: isActive('/home')}">About Me</a>
               </li>
               <li>
-                <a href="#!/work" class="work-nav" ng-class="{active: isActive('/work')}">My Work</a>
+                <a href="#!/work" class="work-nav" ng-class="{active: isActive('/work')}">Dev Work</a>
               </li>
               <li>
                 <a href="#!/art" class="art-nav" ng-class="{active: isActive('/art')}">Art</a>
