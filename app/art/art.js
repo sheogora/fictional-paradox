@@ -11,6 +11,21 @@ angular.module('dragonfly.art', ['ngRoute'])
   var artThumbUrl = 'img/art-thumb/';
 
   $scope.photos = [{
+    fullres: artUrl +'goat.jpg',
+    thumbnail: artThumbUrl + 'goat-thumb.jpg',
+    title: 'Capricorn',
+    subhtml: '<h4>Capricorn</h4><p>Quick sketch of a woman with horns, inspired by gazelles.</p>'
+  }, {
+    fullres: artUrl +'fightme.jpg',
+    thumbnail: artThumbUrl + 'fightme-thumb.jpg',
+    title: 'Fight Club',
+    subhtml: '<h4>Fight Club</h4><p>Black and white sketch from a photograph of a gentleman.</p>'
+  }, {
+    fullres: artUrl +'fishy.jpg',
+    thumbnail: artThumbUrl + 'fishy-thumb.jpg',
+    title: 'Japanese Fighting Fish',
+    subhtml: '<h4>Japanese Fighting Fish</h4><p>Sketch of a Japanese Fighting Fish.</p>'
+  }, {
     fullres: artUrl +'widow.jpg',
     thumbnail: artThumbUrl + 'widow-thumb.jpg',
     title: 'Widowmaker',
