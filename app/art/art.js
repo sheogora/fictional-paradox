@@ -41,8 +41,8 @@ angular.module('dragonfly.art', ['ngRoute'])
     title: 'Spot the Blue',
     subhtml: '<h4>Spot the Blue</h4><p>One of my most proudest art works. The contrast between the sharp blue eye and the perspective blend gives this painting softness and innocence. Drawn using Photoshop CS6.</p>'
   }, {
-    fullres: artUrl + 'fishy.jpg',
-    thumbnail: artThumbUrl + 'fishy-thumb.jpg',
+    fullres: artUrl + 'sharky.jpg',
+    thumbnail: artThumbUrl + 'sharky-thumb.jpg',
     title: 'Whale Shark',
     subhtml: '<h4>Whale Shark</h4><p>An underwater scene of a diver meeting a whale shark. Drawn using Photoshop CS6.</p>'
   }, {
